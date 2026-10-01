@@ -1,0 +1,30 @@
+# Secretos y configuración privada
+.env
+.env.*
+!.env.example
+
+# Python y dependencias locales
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Datos y registros locales: no publicar casos reales
+/data/
+/private/
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.log
+/audit*.jsonl
+/smoke-results.json
+
+# Archivos privados de herramientas
+.hermes/
+.streamlit/secrets.toml
+.DS_Store
